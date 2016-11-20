@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<link rel="icon" href="images/psam.png">
+    <title>Signup</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script language="javascript"> 
+	function checkEmail()
+	{
+		var email = document.getElementById('email');
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		
+		if (!filter.test(email.value))
+		{
+			alert('Please provide a valid email address');
+			email.focus;
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+	
+	function checkpass2()
+	{
+		var pass = document.getElementById('pass').value;
+		var pass2 = document.getElementById('pass2').value;
+		
+		if ( pass.length <= 5 )
+		{
+			alert('Password must be more than 5 characters');
+			pass.focus;
+			document.getElementById('pass').value = '';
+			return false;
+		}
+		else if (pass2 != pass)
+		{
+			
+			alert('retype correct password');
+			pass2.focus;
+			document.getElementById('pass2').value = '';
+			return false;
+			
+		}
+		else
+		{
+			return true;
+		}
+	}
+</script>
+    <style type="text/css">
+      .panel{
+      background-color:rgba(0, 0, 0, 0.2);
+      width: 450px;
+      }
+      
+      .panel-footer{
+      background-color:rgba(0, 0, 0, 0.2);
+      }
+
+      .form-control{
+        background-color:rgba(255, 255, 255, 0.5);
+      }
+
+      .input-group-addon{
+        background-color:rgba(255, 255, 255, 0.5);
+      }
+      a:hover{
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body style="background-image: url('images/signup.jpg');">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+        <h2 class="text-center panel-heading">Create Account</h2>
+          <div class="panel panel-default">
+            <form action="signup.php" method="post" onsubmit="return checkEmail() && checkpass2()" >
+            <div class="panel-body">
+            <div class="form-inline">
+              <div class="input-group input-group-sm">
+              <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-user"></i></span>
+              <input  type="text" class="form-control" placeholder="First Name" aria-describedby="sizing-addon3" id="fname" name="fname" required>
+              </div>
+              <div class="input-group input-group-sm">
+              <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-user"></i></span>
+              <input  type="text" class="form-control" placeholder="Last Name" aria-describedby="sizing-addon3" id="lname" name="lname" required>
+              </div>
+            </div>
+            <br>
+              <div class="input-group input-group-sm">
+              <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-user"></i></span>
+          <input  type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3" id="uname" name="uname" required>
+            </div>
+            <br>
+            <div class="input-group input-group-sm">
+              <span class="input-group-addon" id="sizing-addon3"><b>@</b></span>
+          <input type="email" class="form-control" placeholder="email" aria-describedby="sizing-addon3" id="email" name="email">
+            </div>
+            <br>
+            <div class="input-group input-group-sm">
+            <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-lock"></i></span>
+          <input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon3" id="pass" name="pass" required>
+          </div>
+          <br>
+          <div class="input-group input-group-sm">
+            <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-lock"></i></span>
+          <input  type="password" class="form-control" placeholder="Retype Password" aria-describedby="sizing-addon3" id="pass2" name="pass2">
+          </div>
+          <br>
+          <div class="pull-right">
+            <button class="btn btn-default" type="submit" name="submit" id="submit" onclick='Javascript:checkEmail();checkpass2;' >Signup <i class="glyphicon glyphicon-"></i></button>
+          </div>
+            </div>
+            </form>
+            <div class="panel-footer">
+              <h5>Already have an account? <a href="login.html">Login Here</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+    
+  </body>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</html>
