@@ -2,8 +2,8 @@
 /**********VICAVELLY® STUDIO INC*********/
 /*
 created by   vitus©   @   VICAVELLY® Studio 
-Time started : 11:45am;
-Date         : 26th March, 2016;
+Time started : 11:45pm;
+Date         : 21th November, 2016;
 */
 
 //session_start();  //starting session
@@ -13,7 +13,7 @@ $host= "localhost";
 $user= "root";
 $pwd= "";
 
-$db= "amberegulweb";
+$db= "FriendsApplication";
 	
 //establishing connection
 $conn=@mysql_connect($host, $user, $pwd);
@@ -84,7 +84,7 @@ else
 		$username  = mysql_real_escape_string($password);
 		
 		// selecting database
-		$db = mysql_select_db("amberegulweb", $conn);
+		$db = mysql_select_db("FriendsApplication", $conn);
 	
 		//check if user exist in database
 		$query = mysql_query("select * from signup where password = '$password', uname='$uname',  AND email='$email'", $conn);
