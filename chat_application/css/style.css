@@ -1,0 +1,146 @@
+body
+{
+	background:#16a085;
+	margin:0px;
+	font-family:sans-serif;
+	/*
+    background-image: url("img/vitus.jpeg");
+	background-repeat: no-repeat;
+	display: compact;
+	background-size: 1300px; 800px;
+	*/
+	
+}
+
+.msg_box
+{
+    width:250px;
+    box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+    
+}
+
+
+.msg_body
+{
+    height: 250px;
+    font-size: 12px;
+}
+
+.chat_box,.msg_box
+{
+	background:white;
+	width:250px;
+	position:fixed;
+	bottom:0px;
+	right:20px;
+	border-radius: 5px 5px 0px 0px;
+	
+}
+
+.chat_head,.msg_head
+{
+	padding:15px;
+	background:#d35400;
+	color:white;
+	border-radius: 5px 5px 0px 0px;
+    box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+}
+
+.chat_body
+{
+	height:400px;
+    box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+}
+
+.user
+{
+	padding:20px 25px;
+	position:Relative;
+}
+
+.user:hover
+{
+	background:#f8f8f8	;
+}
+
+.user:before
+{
+	position:absolute;
+	content:"";  
+	background:#2ecc71;
+	width:10px;
+	height:10px;
+	left:8px;
+	top:24px;
+	border-radius:5px;
+}
+
+.msg_head
+{
+    background: #3498db;
+}
+
+.close
+{
+    font-family: roboto;
+    float: right;
+    color: wheat;
+    padding-top: -8 0px;
+}
+
+.msg_input
+{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family:cursive;
+    border: transparent;
+    border-top: 2px solid #bdc3c7;
+}
+
+.msg_a 
+{
+    padding: 15px;
+    background: #bdc3c7;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    position: relative
+}
+
+.msg_a:before
+{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 15px solid;
+    border-color:  transparent #bdc3c7 transparent transparent;
+    position: absolute;
+    top: 7px;
+    left: -29px;
+    
+}
+
+.msg_b 
+{
+    padding: 15px;
+    background: #bdc3c7;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    position: relative
+}
+
+.msg_b:before
+{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 15px solid;
+    border-color:  transparent  transparent transparent #bdc3c7;
+    position: absolute;
+    top: 7px;
+    right: -29px;
+    
+}
