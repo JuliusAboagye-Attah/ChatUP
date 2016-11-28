@@ -23,8 +23,19 @@ $(document).ready(function(){
                 
                 $("<div class='msg_b'>"+msg+"</div>").insertBefore('.msg_insert');
                 $('.msg_body').scrollTop($('.msg_body')[0].scrollHeight);
+                $('textarea').val("");
             }
     });
+    
+     $('.img').click(function(){
+        $('.detail_contact').hide("slide", { direction: "left"  }, 900);
+    });
 
+     $('.msg_head').click(function(){
+        $('.detail_contact').show("slide", {direction: "left" }, 900 );
+    });
+    
+    
+    
 
 });
