@@ -46,6 +46,7 @@ body
   cursor: pointer;
   margin-top: 210px;
   margin-left: 90px;
+ 
 }
 
 .button span {
@@ -53,6 +54,7 @@ body
   display: inline-block;
   position: relative;
   transition: 0.5s;
+    
 }
 
 .button span:after {
@@ -62,14 +64,22 @@ body
   top: 0;
   right: -20px;
   transition: 0.5s;
+   
 }
 
 .button:hover span {
   padding-right: 25px;
+    
 }
 
-.button:hover span:after {
+.button:hover  {
   opacity: 1;
+  right: 0;
+     box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+}
+.button:hover span:after
+{
+    opacity: 1;
   right: 0;
 }
 
@@ -82,7 +92,7 @@ body
     font-size: 20px;
 	border-radius: 5px 5px 0px 0px;
     box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
-}
+}   
 
 .img
 {
