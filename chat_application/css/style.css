@@ -30,6 +30,19 @@ body
 	right:20px;
 	border-radius: 5px 5px 0px 0px; 
     box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+    display: none;
+}
+.owner
+{
+   height: 700px;
+    background: white;
+	width:390px;
+	position:static;
+	bottom:0px;
+	right:20px;
+	border-radius: 5px 5px 0px 0px; 
+    box-shadow: 0 0 24px rgba(8, 25, 17, 22.2); 
+    display: none;
 }
 
 .button {
@@ -94,6 +107,17 @@ body
     box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
 }   
 
+.name_style
+{
+    cursor: pointer;
+    padding:30px;
+	background: red;
+	color:white;
+    font-size: 20px;
+	border-radius: 5px 5px 0px 0px;
+    box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+}
+
 .img
 {
 	margin-left: 150px;
@@ -121,11 +145,28 @@ body
     filter: alpha(opacity=50); /* For IE8 and earlier */ 
 }
 
+.circle_0f_owner
+{
+    position:inherit;
+    width: 50%;
+    height: auto;
+    padding-top: 50%;
+    margin-left: 60px;
+    background: #ef8913;    
+    border-radius: 100px;
+}
+
+.circle_0f_owner:hover
+{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */ 
+}
+
 .msg_box
 {
     width:250px;
     box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
-    
+    display: none;
 }
     
     
@@ -148,7 +189,8 @@ body
 	
 }
 
-.chat_head,.msg_head
+
+.chat_head,.msg_head 
 {
 	cursor: pointer;
     padding:15px;
@@ -156,12 +198,15 @@ body
 	color:white;
 	border-radius: 5px 5px 0px 0px;
     box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
-}
+    padding-bottom: 90px;
+    }
 
 .chat_body
 {
 	height:400px;
     box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+    display: none;
+    padding-bottom: 90px;
 }
 
 .user
@@ -196,6 +241,11 @@ body
 .msg_head:hover
 {
     color: #66FF66;
+}
+
+.msg_footer
+{
+    padding-bottom: 90px;
 }
 
 .close
@@ -282,4 +332,14 @@ body
   visibility: visible;
   opacity: 1;
   transition: opacity 2s linear;
+}
+
+.footer
+{
+	width:250px;
+	position:fixed;
+	bottom:50px;
+	right:20px;
+    float: right;
+    margin-right: 90px;
 }

@@ -1,0 +1,343 @@
+/**********VICAVELLY® STUDIO INC*********/
+/*
+created by   vitus&Co-GroupMembers©   @   VICAVELLY and Group® Studio 
+Time started : 4:05am;
+Date         : 25th November, 2016;
+*/
+body
+{
+	background:#16a085;
+	margin:0px;
+	font-family:sans-serif;
+	/*
+    background-image: url("img/vitus.jpeg");
+	background-repeat: no-repeat;
+	display: compact;
+	background-size: 1300px; 800px;
+	*/
+	
+}
+
+
+.detail_contact
+{
+    
+    height: 700px;
+    background: white;
+	width:400px;
+	position:fixed;
+	bottom:0px;
+	right:20px;
+	border-radius: 5px 5px 0px 0px; 
+    box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+    display: none;
+}
+.owner
+{
+   height: 700px;
+    background: white;
+	width:390px;
+	position:static;
+	bottom:0px;
+	right:20px;
+	border-radius: 5px 5px 0px 0px; 
+    box-shadow: 0 0 24px rgba(8, 25, 17, 22.2); 
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 210px;
+  margin-left: 90px;
+ 
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+    
+}
+
+.button span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+   
+}
+
+.button:hover span {
+  padding-right: 25px;
+    
+}
+
+.button:hover  {
+  opacity: 1;
+  right: 0;
+     box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+}
+.button:hover span:after
+{
+    opacity: 1;
+  right: 0;
+}
+
+.name_0f_contact
+{
+    cursor: pointer;
+    padding:30px;
+	background: red;
+	color:white;
+    font-size: 20px;
+	border-radius: 5px 5px 0px 0px;
+    box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+}   
+
+.name_style
+{
+    cursor: pointer;
+    padding:30px;
+	background: red;
+	color:white;
+    font-size: 20px;
+	border-radius: 5px 5px 0px 0px;
+    box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+}
+
+.img
+{
+	margin-left: 150px;
+    margin-top: 90px;   
+}
+
+.empty
+{
+    padding-top: 50px;
+}
+
+.circle_0f
+{
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding-top: 50%;
+    background: #ef8913;    
+    border-radius: 100px;
+}
+
+.circle_0f:hover
+{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */ 
+}
+
+.circle_0f_owner
+{
+    position:inherit;
+    width: 50%;
+    height: auto;
+    padding-top: 50%;
+    margin-left: 60px;
+    background: #ef8913;    
+    border-radius: 100px;
+}
+
+.circle_0f_owner:hover
+{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */ 
+}
+
+.msg_box
+{
+    width:250px;
+    box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+    
+}
+    
+    
+.msg_body
+{
+    height: 200px;
+    font-size: 12px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.chat_box,.msg_box
+{
+	background:white;
+	width:250px;
+	position:fixed;
+	bottom:0px;
+	right:20px;
+	border-radius: 5px 5px 0px 0px;
+	
+}
+
+.chat_head,.msg_head 
+{
+	cursor: pointer;
+    padding:15px;
+	background:#d35400;
+	color:white;
+	border-radius: 5px 5px 0px 0px;
+    box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+    padding-bottom: 90px;
+    }
+
+.chat_body
+{
+	height:400px;
+    box-shadow: 0 0 24px rgba(8, 25, 17, 22.2);
+    
+    padding-bottom: 90px;
+}
+
+.user
+{
+	padding:20px 25px;
+	position:Relative;
+    cursor: pointer;
+}
+
+.user:hover
+{
+	background:#f8f8f8	;
+}
+
+.user:before
+{
+	position:absolute;
+	content:"";  
+	background:#2ecc71;
+	width:10px;
+	height:10px;
+	left:8px;
+	top:24px;
+	border-radius:5px;
+}
+
+.msg_head
+{
+    background: #3498db;
+}
+
+.msg_head:hover
+{
+    color: #66FF66;
+}
+
+.msg_footer
+{
+    padding-bottom: 90px;
+}
+
+.close
+{
+    font-family: roboto;
+    float: right;
+    color: wheat;
+    padding-top: -8 0px;
+}
+.close:hover
+{
+    color: #FF0000;
+}
+
+.msg_input
+{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family:cursive;
+    border: transparent;
+    border-top: 2px solid #bdc3c7;
+}
+
+.msg_a 
+{
+    padding: 15px;
+    background: #99ffcc;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    position: relative
+}
+
+.msg_a:before
+{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 15px solid;
+    border-color:  transparent #99ffcc transparent transparent;
+    position: absolute;
+    top: 7px;
+    left: -29px;
+    
+}
+
+.msg_b 
+{
+    padding: 15px;
+    background: #ffff99;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    position: relative
+}
+
+.msg_b:before
+{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 15px solid;
+    border-color:  transparent  transparent transparent #ffff99;
+    position: absolute;
+    top: 7px;
+    right: -29px;
+    
+}
+
+.time_stamp
+{
+    
+    font-style: italic;
+    float: right;
+    position: relative;
+    margin-top: 10px;
+    font-family:sans-serif;
+}
+
+.visible,.msg_body 
+{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.footer
+{
+	width:250px;
+	position:fixed;
+	bottom:50px;
+	right:20px;
+    float: right;
+    margin-right: 90px;
+}

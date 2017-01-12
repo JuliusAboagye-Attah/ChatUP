@@ -1,5 +1,8 @@
 $(document).ready(function(){
-   $('.chat_head').click(function(){
+    $('.chat_body').slideToggle();
+     $('.owner').show("slide", {direction: "left" }, 1000);
+    
+    $('.chat_head').click(function(){
       $('.chat_body').slideToggle(); 
    });
 
@@ -9,6 +12,7 @@ $(document).ready(function(){
     
     $('.close').click(function(){
         $('.msg_box').hide();
+        $('.detail_contact').hide("slide", { direction: "left"  }, 1000);
     });
     
     $('.user').click(function(){
@@ -28,14 +32,10 @@ $(document).ready(function(){
     });
     
      $('.img').click(function(){
-        $('.detail_contact').hide("slide", { direction: "left"  }, 900);
+        $('.detail_contact').hide("slide", { direction: "left"  }, 1000);
     });
 
      $('.msg_head').click(function(){
-        $('.detail_contact').show("slide", {direction: "left" }, 900 );
+        $('.detail_contact').show("slide", {direction: "left" }, 1000);
     });
-    
-    
-    
-
 });
